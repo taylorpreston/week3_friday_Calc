@@ -8,16 +8,18 @@ var numbers = document.querySelectorAll('.numbers');
 for(i=0; i < numbers.length; ++i){
   numbers[i].addEventListener('click', clickThing);
 }
+
 var ops = document.querySelectorAll('.ops');
 for(i=0; i < ops.length; ++i){
   ops[i].addEventListener('click', clickThing);
 }
+
 var equal = document.getElementById('equals').addEventListener('click', eq, clickThing)
 var clear = document.getElementById('clear').addEventListener('click', clear, clickThing)
+
 //FUNCTIONS//
 
 function clickThing(event) {
-  // console.log(event.target.value)
   value = event.target.value;
   document.getElementById('numInput').innerHTML += value;
 }

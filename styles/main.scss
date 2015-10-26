@@ -1,8 +1,9 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+$gutter: 0em;
 @import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
 
 body{
-
+  @include outer-container(800px);
 }
 
 main{
@@ -18,7 +19,6 @@ button{
   height: 83px;
   text-align: center;
   border: 2px solid #A8D5A1;
-  margin: 0;
   background: #65B257;
   font-size: 28px;
   color: #A8D5A1;
@@ -27,12 +27,11 @@ button{
 .calcBox{
   @include span-columns(12);
   height:83px;
-  margin: 0;
+
 }
 .calcBox{
   button{
     @include span-columns(3);
-    margin: 0;
   }
   span{
     @include span-columns(9);
@@ -48,22 +47,18 @@ button{
 .numbers{
   @include outer-container;
   @include span-columns(9);
-  margin: 0;
 }
 .numbers button{
   @include span-columns(4);
   @include omega(3n);
-  margin: 0;
 }
 
 
 .ops{
   @include span-columns(3);
-  margin: 0;
 }
 
 .ops button{
   @include span-columns(12);
   height: 83px;
-  margin: 0;
 }
