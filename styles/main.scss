@@ -1,0 +1,69 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+body{
+
+}
+
+main{
+  @include span-columns(8);
+  @include shift (2);
+  background-color: #65B257;
+  height: 415px;
+
+}
+
+button{
+  @include span-columns(3);
+  height: 83px;
+  text-align: center;
+  border: 2px solid #A8D5A1;
+  margin: 0;
+  background: #65B257;
+  font-size: 28px;
+  color: #A8D5A1;
+}
+
+.calcBox{
+  @include span-columns(12);
+  height:83px;
+  margin: 0;
+}
+.calcBox{
+  button{
+    @include span-columns(3);
+    margin: 0;
+  }
+  span{
+    @include span-columns(9);
+    height: 83px;
+    border: 2px solid #A8D5A1;
+    font-size: 38px;
+    color: #A8D5A1;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+}
+
+.numbers{
+  @include outer-container;
+  @include span-columns(9);
+  margin: 0;
+}
+.numbers button{
+  @include span-columns(4);
+  @include omega(3n);
+  margin: 0;
+}
+
+
+.ops{
+  @include span-columns(3);
+  margin: 0;
+}
+
+.ops button{
+  @include span-columns(12);
+  height: 83px;
+  margin: 0;
+}
